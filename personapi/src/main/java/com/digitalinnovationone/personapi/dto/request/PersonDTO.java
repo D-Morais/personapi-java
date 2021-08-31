@@ -1,6 +1,5 @@
 package com.digitalinnovationone.personapi.dto.request;
 
-import com.digitalinnovationone.personapi.entity.Phone;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,7 +26,7 @@ public class PersonDTO {
 
     @NotEmpty
     @Size(min = 2, max = 100)
-    private String latsName;
+    private String lastName;
 
     @NotEmpty
     @CPF
@@ -38,5 +37,5 @@ public class PersonDTO {
 
     @Valid
     @NotEmpty
-    private List<Phone> phones;
+    private List<PhoneDTO> phones;
 }
